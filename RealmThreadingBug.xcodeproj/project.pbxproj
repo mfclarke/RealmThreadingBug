@@ -15,9 +15,9 @@
 		F1B83D181B43D18F005CBF7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B83D171B43D18F005CBF7E /* Images.xcassets */; };
 		F1B83D1B1B43D18F005CBF7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B83D191B43D18F005CBF7E /* LaunchScreen.xib */; };
 		F1B83D271B43D18F005CBF7E /* RealmThreadingBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D261B43D18F005CBF7E /* RealmThreadingBugTests.m */; };
-		F1B83D321B43DD59005CBF7E /* RealmBugManifester.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D311B43DD59005CBF7E /* RealmBugManifester.m */; };
-		F1B83D351B43DD7A005CBF7E /* CustomRealmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D341B43DD7A005CBF7E /* CustomRealmObject.m */; };
-		F1B83D381B43DDA7005CBF7E /* CustomChildRealmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D371B43DDA7005CBF7E /* CustomChildRealmObject.m */; };
+		F1B83D321B43DD59005CBF7E /* RealmIssueManifester.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D311B43DD59005CBF7E /* RealmIssueManifester.m */; };
+		F1B83D351B43DD7A005CBF7E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D341B43DD7A005CBF7E /* Person.m */; };
+		F1B83D381B43DDA7005CBF7E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B83D371B43DDA7005CBF7E /* Dog.m */; };
 		F1B83D3A1B43EC78005CBF7E /* an_image.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B83D391B43EC78005CBF7E /* an_image.png */; };
 /* End PBXBuildFile section */
 
@@ -48,12 +48,12 @@
 		F1B83D201B43D18F005CBF7E /* RealmThreadingBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmThreadingBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B83D251B43D18F005CBF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B83D261B43D18F005CBF7E /* RealmThreadingBugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmThreadingBugTests.m; sourceTree = "<group>"; };
-		F1B83D301B43DD59005CBF7E /* RealmBugManifester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmBugManifester.h; sourceTree = "<group>"; };
-		F1B83D311B43DD59005CBF7E /* RealmBugManifester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmBugManifester.m; sourceTree = "<group>"; };
-		F1B83D331B43DD7A005CBF7E /* CustomRealmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRealmObject.h; sourceTree = "<group>"; };
-		F1B83D341B43DD7A005CBF7E /* CustomRealmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRealmObject.m; sourceTree = "<group>"; };
-		F1B83D361B43DDA7005CBF7E /* CustomChildRealmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomChildRealmObject.h; sourceTree = "<group>"; };
-		F1B83D371B43DDA7005CBF7E /* CustomChildRealmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomChildRealmObject.m; sourceTree = "<group>"; };
+		F1B83D301B43DD59005CBF7E /* RealmIssueManifester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmIssueManifester.h; sourceTree = "<group>"; };
+		F1B83D311B43DD59005CBF7E /* RealmIssueManifester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmIssueManifester.m; sourceTree = "<group>"; };
+		F1B83D331B43DD7A005CBF7E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F1B83D341B43DD7A005CBF7E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F1B83D361B43DDA7005CBF7E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F1B83D371B43DDA7005CBF7E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		F1B83D391B43EC78005CBF7E /* an_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = an_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,12 +116,12 @@
 		F1B83D091B43D18F005CBF7E /* RealmThreadingBug */ = {
 			isa = PBXGroup;
 			children = (
-				F1B83D331B43DD7A005CBF7E /* CustomRealmObject.h */,
-				F1B83D341B43DD7A005CBF7E /* CustomRealmObject.m */,
-				F1B83D361B43DDA7005CBF7E /* CustomChildRealmObject.h */,
-				F1B83D371B43DDA7005CBF7E /* CustomChildRealmObject.m */,
-				F1B83D301B43DD59005CBF7E /* RealmBugManifester.h */,
-				F1B83D311B43DD59005CBF7E /* RealmBugManifester.m */,
+				F1B83D331B43DD7A005CBF7E /* Person.h */,
+				F1B83D341B43DD7A005CBF7E /* Person.m */,
+				F1B83D361B43DDA7005CBF7E /* Dog.h */,
+				F1B83D371B43DDA7005CBF7E /* Dog.m */,
+				F1B83D301B43DD59005CBF7E /* RealmIssueManifester.h */,
+				F1B83D311B43DD59005CBF7E /* RealmIssueManifester.m */,
 				F1B83D0E1B43D18F005CBF7E /* AppDelegate.h */,
 				F1B83D0F1B43D18F005CBF7E /* AppDelegate.m */,
 				F1B83D111B43D18F005CBF7E /* ViewController.h */,
@@ -297,9 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B83D321B43DD59005CBF7E /* RealmBugManifester.m in Sources */,
-				F1B83D351B43DD7A005CBF7E /* CustomRealmObject.m in Sources */,
-				F1B83D381B43DDA7005CBF7E /* CustomChildRealmObject.m in Sources */,
+				F1B83D321B43DD59005CBF7E /* RealmIssueManifester.m in Sources */,
+				F1B83D351B43DD7A005CBF7E /* Person.m in Sources */,
+				F1B83D381B43DDA7005CBF7E /* Dog.m in Sources */,
 				F1B83D131B43D18F005CBF7E /* ViewController.m in Sources */,
 				F1B83D101B43D18F005CBF7E /* AppDelegate.m in Sources */,
 				F1B83D0D1B43D18F005CBF7E /* main.m in Sources */,

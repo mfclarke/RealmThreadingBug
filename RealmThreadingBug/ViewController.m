@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "RealmBugManifester.h"
-#import "CustomRealmObject.h"
+#import "RealmIssueManifester.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -16,31 +16,38 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    int counter = 0;
-    while (counter < 100) {
+    [self createTestObjects];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self manifestRealmIssue];
+}
+
+- (void)createTestObjects
+{
+    for (int counter=0; counter < 100; counter++)
+    {
         [[RLMRealm defaultRealm] beginWriteTransaction];
-        CustomRealmObject *object = [[CustomRealmObject alloc] init];
-        object.customKey = [[NSUUID UUID] UUIDString];
+        Person *object = [[Person alloc] init];
+        object.identifier = [[NSUUID UUID] UUIDString];
         [[RLMRealm defaultRealm] addObject:object];
         [[RLMRealm defaultRealm] commitWriteTransaction];
         counter++;
     }
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    for (CustomRealmObject *object in [CustomRealmObject allObjects]) {
+- (void)manifestRealmIssue
+{
+    for (Person *person in [Person allObjects])
+    {
         UIImage *anImage = [UIImage imageNamed:@"an_image.png"];
-        [RealmBugManifester manifestBugForKey:object.customKey imageData:UIImagePNGRepresentation(anImage)];
+        [RealmIssueManifester manifestIssueUsingKey:person.identifier imageData:UIImagePNGRepresentation(anImage)];
     }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RealmBugManifester : NSObject
+@interface RealmIssueManifester : NSObject
 
-+ (void)manifestBugForKey:(NSString *)key imageData:(NSData *)imageData;
++ (void)manifestIssueUsingKey:(NSString *)key imageData:(NSData *)imageData;
 
 @end

@@ -6,12 +6,12 @@
 //
 //
 
-#import "CustomRealmObject.h"
+#import "Person.h"
 
-@implementation CustomRealmObject
+@implementation Person
 
 + (NSString *)primaryKey {
-    return @"customKey";
+    return @"identifier";
 }
 
 @end

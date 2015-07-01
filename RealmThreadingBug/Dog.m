@@ -6,8 +6,8 @@
 //
 //
 
-#import "CustomChildRealmObject.h"
+#import "Dog.h"
 
-@implementation CustomChildRealmObject
+@implementation Dog
 
 @end

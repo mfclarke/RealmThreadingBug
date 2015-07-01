@@ -8,10 +8,10 @@
 
 #import "Realm.h"
 
-@interface CustomChildRealmObject : RLMObject
+@interface Dog : RLMObject
 
 @property NSData *imageData;
 
 @end
 
-RLM_ARRAY_TYPE(CustomChildRealmObject)
+RLM_ARRAY_TYPE(Dog)
